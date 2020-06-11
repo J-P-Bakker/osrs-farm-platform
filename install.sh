@@ -11,8 +11,10 @@ apt install -y docker-ce
 # Install docker-compose
 apt install -y docker-compose
 
-# Install dependencies
+
+#### dependencies
+# Install ubuntu dependencies
 apt install -y python3-pip libpq-dev
 
-#Install pip packages
+#Install python dependencies
 pip3 install psycopg2

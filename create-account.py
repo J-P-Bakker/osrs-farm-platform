@@ -1,5 +1,5 @@
 import json
-import psycopg2  # pip install psycopg2
+import psycopg2
 import random
 import string
 import sys
@@ -77,7 +77,7 @@ def createAccount():
     # create account in RS
     # 1. setup proxy
     # 2. navigate to https://secure.runescape.com/m=account-creation/create_account?theme=oldschool
-    # 3. input email, password, Date of Birth
+    # 3. fill in form
     # 4. "click" PLAY NOW
     # 5. solve captcha? :'(
     # 5.1 Seems like not every request has to solve one.
@@ -116,15 +116,13 @@ def saveToDatabase(account):
 
 
 def main(amount):
-    # proxy_list = args.script[1]
-
     accounts_completed = 0
     while accounts_completed < amount:
         account = createAccount()
         saveToDatabase(account)
         accounts_completed += 1
 
-    print("\nAccounts created and saved to DB\n")
+    print("\nAccounts created and saved to database\n")
 
 
 if __name__ == "__main__":

@@ -1,20 +1,17 @@
 ## OSRS account creator and manager
-A setup to create accounts and save them in a "persistent" database
+A setup to create accounts and save them in a "persistent" postgresql database
 
 ## Motivation
 Just giving it a try to setup the basis of a goldfarm backend
 
 ## Features
-Create new accounts and save them to a database
-
-## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+Create new accounts and save them to a local postgresql database
 
 ## Installation
 Provide step by step series of examples and explanations about how to get a development env running.
 * Install Docker
   * To install docker on ubuntu follow [docker on ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
-    * or use install.sh
+    * or use [install.sh](install.sh)
         ```bash
         sudo ./install.sh
         ```
@@ -28,15 +25,15 @@ Provide step by step series of examples and explanations about how to get a deve
         ```bash
         su - ${USER}
         ```
+* Install dependencies (see [install.sh](install.sh)]
 * Pull repo
-* start docker containers (with docker-compose)
-* start account creator script
+* Start docker containers (with docker-compose)
+* Start account creator script
 
 ## Tests
 Describe and show how to run the tests with code examples.
 
 ## How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
 
 ### 0. Pull git repo
 ```bash
