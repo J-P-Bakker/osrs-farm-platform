@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Install docker-ce
+apt update -y 
+apt install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+apt update -y
+apt install -y docker-ce
+
+# Install docker-compose
+apt install -y docker-compose
+
+# Install dependencies
+apt install -y python3-pip libpq-dev
+
+#Install pip packages
+pip3 install psycopg2
