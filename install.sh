@@ -16,4 +16,4 @@ apt install -y docker-compose
 apt install -y python3-pip libpq-dev
 
 #Install python dependencies
-pip3 install psycopg2 requests-html
+pip3 install psycopg2 requests-html python-anticaptcha requests requests[socks]

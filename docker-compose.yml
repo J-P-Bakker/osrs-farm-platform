@@ -6,7 +6,7 @@ services:
         image: postgres:latest
         restart: always
         env_file:
-            - database.env
+            - settings/database.env
         volumes: 
             - /home/${USERNAME}/osrs-farm-platform/postgres-data:/var/lib/postgresql/data
         ports: 
