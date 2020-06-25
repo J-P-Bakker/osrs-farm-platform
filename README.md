@@ -5,7 +5,7 @@ A setup to create accounts and save them in a "persistent" postgresql database
 Just giving it a try to setup the basis of a goldfarm backend
 
 ## Features
-Create new accounts and save them to a local postgresql database
+Create new runescape accounts and save them to a local postgresql database
 
 ## Installation
 Provide step by step series of examples and explanations about how to get a development env running.
@@ -25,7 +25,7 @@ Provide step by step series of examples and explanations about how to get a deve
         ```bash
         su - ${USER}
         ```
-* Install dependencies (see [install.sh](install.sh)]
+* Install dependencies (see [install.sh](install.sh))
 * Pull repo
 * Start docker containers (with docker-compose)
 * Start account creator script
@@ -35,9 +35,9 @@ Describe and show how to run the tests with code examples.
 
 ## How to use?
 
-### 0. Pull git repo
+### 0. Clone git repo
 ```bash
-git pull https://github.com/J-P-Bakker/osrs-farm-platform.git
+git clone https://github.com/J-P-Bakker/osrs-farm-platform.git
 ```
 
 ### 1. Setup basic environment files
@@ -60,7 +60,9 @@ USERNAME="$(whoami)" docker-compose --file docker-compose.yml up --detach
 ```
 
 ### 3. Start account creator
-python script for account creator
+```bash
+python3 create-account.py <amount>
+```
 
 ## License
 A short snippet describing the license (MIT, Apache etc)

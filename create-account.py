@@ -81,7 +81,7 @@ def createAccount():
     # 4. "click" PLAY NOW
     # 5. solve captcha? :'(
     # 5.1 Seems like not every request has to solve one.
-    # 5.2 Terminale requests that do, and retry with "new" account
+    # 5.2 Terminale requests that ask for one, and retry with "new" account
 
     return account
 
